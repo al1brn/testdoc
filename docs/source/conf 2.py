@@ -12,13 +12,8 @@
 #
 import os
 import sys
-#sys.path.insert(0, '/Users/alain/Documents/blender/scripts/modules/geonodes/core/')
-#sys.path.insert(0, '/Users/alain/Documents/blender/scripts/modules/geonodes/core/')
-#fpath = '/Users/alain/Documents/blender/scripts/modules/testdoc/docs/source/'
-fpath = "/Users/alain/Documents/blender/scripts/modules/"
-sys.path.insert(0, fpath)
+sys.path.insert(0, os.path.abspath('/Users/alain/Documents/blender/scripts/modules/geonodes'))
 
-sys.path.append(os.path.abspath("./_ext")) # For custom extensions
 
 # -- Project information -----------------------------------------------------
 
@@ -36,28 +31,7 @@ release = '1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc', 
-    'sphinx.ext.autosummary',
-    'sphinx.ext.napoleon',
-    'sphinx_autodoc_typehints',
-    'blidname'
 ]
-
-# Napoleon settings
-napoleon_google_docstring = True
-napoleon_numpy_docstring = True
-napoleon_include_init_with_doc = False
-napoleon_include_private_with_doc = False
-napoleon_include_special_with_doc = True
-napoleon_use_admonition_for_examples = True #False
-napoleon_use_admonition_for_notes = False #False
-napoleon_use_admonition_for_references = True #False
-napoleon_use_ivar = False
-napoleon_use_param = True
-napoleon_use_rtype = True
-napoleon_preprocess_types = False
-napoleon_type_aliases = None
-napoleon_attr_annotations = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
