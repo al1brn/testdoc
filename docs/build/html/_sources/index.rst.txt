@@ -6,33 +6,20 @@
 Geonodes documentation
 ======================
 
-Home page
-
-.. automodule:: geonodes
-   :members:
-   
-#.. autoclass:: geonodes.core.field.Field
-#   :members:
-   
-.. autoclass:: geonodes.core.field.Radius
-   :members:
-   
-#   :inherited-members:
-
-   
-   
-.. autosummary::
-   :toctree: _autosummary
-   :recursive:   
+**Geonodes** generates *Geometry Nodes* trees in Blender.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
    
+   sockets
+   domains
+   functions
+   nodes
+     
 
 Indices and tables
 ==================
-
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

@@ -18,7 +18,8 @@
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data sockets" href="sockets.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -36,12 +37,13 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Geonodes documentation</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="sockets.html">Data sockets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="domains.html">Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes.html">Geometry nodes</a></li>
 </ul>
-</div>
+
         </div>
       </div>
     </nav>
@@ -68,56 +70,44 @@
              
   <section id="geonodes-documentation">
 <h1>Geonodes documentation<a class="headerlink" href="#geonodes-documentation" title="Permalink to this heading"></a></h1>
-<p>Home page</p>
-<span class="target" id="module-geonodes"></span><p>#.. autoclass:: geonodes.core.field.Field
-#   :members:</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="geonodes.core.field.Radius">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">geonodes.core.field.</span></span><span class="sig-name descname"><span class="pre">Radius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">geo_domain</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geonodes.core.field.Radius" title="Permalink to this definition"></a></dt>
-<dd><p>Field Radius</p>
-<dl class="simple">
-<dt>Implementation:</dt><dd><ul class="simple">
-<li><p>get: <code class="xref py py-class docutils literal notranslate"><span class="pre">nodes.Radius</span></code></p></li>
-<li><p>set: <code class="xref py py-class docutils literal notranslate"><span class="pre">nodes.SetPointRadius</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">nodes.SetCurveRadius</span></code></p></li>
-<li><p>selectable: <em>True</em></p></li>
-</ul>
-</dd>
-</dl>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>There are two setter for raidus, depending on the domain:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>POINT : SetPointRadius</p></li>
-<li><p>CURVE : SetCurveRadius</p></li>
-</ul>
-</div></blockquote>
-</div>
-<dl class="py method">
-<dt class="sig sig-object py" id="geonodes.core.field.Radius.create_input_node">
-<span class="sig-name descname"><span class="pre">create_input_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geonodes.core.field.Radius.create_input_node" title="Permalink to this definition"></a></dt>
-<dd><sub>Blender reference : <a class="reference external" href="https://docs.blender.org/api/current/bpy.types.GeometryNodeInputRadius.html"><em>GeometryNodeInputRadius, </em></a><a class="reference external" href="https://docs.blender.org/api/current/bpy.types.GeometryNodeInputRadius.html"><em>Node GeometryNodeInputRadius</em></a><p></p>
-</sub></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="geonodes.core.field.Radius.set_value">
-<span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geonodes.core.field.Radius.set_value" title="Permalink to this definition"></a></dt>
-<dd><sub>Blender reference : <a class="reference external" href="https://docs.blender.org/api/current/bpy.types.GeometryNodeSetPointRadius.html"><em>GeometryNodeSetPointRadius, </em></a><a class="reference external" href="https://docs.blender.org/api/current/bpy.types.GeometryNodeSetPointRadius.html"><em>Node GeometryNodeSetPointRadius</em></a><p></p>
-</sub><sub>Blender reference : <a class="reference external" href="https://docs.blender.org/api/current/bpy.types.GeometryNodeSetCurveRadius.html"><em>GeometryNodeSetCurveRadius, </em></a><a class="reference external" href="https://docs.blender.org/api/current/bpy.types.GeometryNodeSetCurveRadius.html"><em>Node GeometryNodeSetCurveRadius</em></a><p></p>
-</sub></dd></dl>
-
-</dd></dl>
-
-<p>#   :inherited-members:</p>
-<table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
-<tbody>
-</tbody>
-</table>
+<p><strong>Geonodes</strong> generates <em>Geometry Nodes</em> trees in Blender.</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="sockets.html">Data sockets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sockets/boolean.html">Boolean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/integer.html">Integer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/float.html">Float</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/string.html">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/mesh.html">Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/curve.html">Curve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/points.html">Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/instances.html">Instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/volume.html">Volume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/collection.html">Collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/object.html">Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/material.html">Material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/texture.html">Texture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets/image.html">Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sockets.html#sockets-categories">Sockets categories</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="domains.html">Domains</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="domains/vertex.html">Vertex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/face.html">Face</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/edge.html">Edge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/corner.html">Corner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/spline.html">Spline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/controlpoint.html">ControlPoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/cloudpoint.html">CloudPoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains/instance.html">Instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domains.html#property-names">Property names</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Global functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nodes.html">Geometry nodes</a></li>
+</ul>
 </div>
 </section>
 <section id="indices-and-tables">
@@ -132,7 +122,9 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="sockets.html" class="btn btn-neutral float-right" title="Data sockets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

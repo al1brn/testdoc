@@ -43,6 +43,12 @@ extensions = [
     'blidname'
 ]
 
+#autodoc_default_options = {
+#    'autosummary': True,
+#}
+
+add_module_names = False   # Display only class names with no package path
+
 # Napoleon settings
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
